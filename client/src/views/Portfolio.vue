@@ -1,18 +1,16 @@
 <template>
-<div>
-  <v-row class="ma-2">
+  <div>
+    <v-row class="ma-2">
       <nav-card @displayChanged="updateDisplay($event)"></nav-card>
-    <v-col>       
-            <treemap v-if="displayNum == 0"></treemap>
-            <div v-if="displayNum == 1">Graph</div>
-            <div v-if="displayNum == 2">
-                <button @click="getPortfolioContentDimensions">Click</button>
-            </div>
-    </v-col>
-  </v-row>
-  
-</div>
-
+      <v-col>
+        <treemap v-if="displayNum == 0"></treemap>
+        <div v-if="displayNum == 1">Graph</div>
+        <div v-if="displayNum == 2">
+          <button @click="getPortfolioContentDimensions">Click</button>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -28,7 +26,7 @@ export default {
   },
   components: {
     navCard: NavCard,
-    treemap: TreeMap
+    treemap: TreeMap,
   },
   methods: {
     updateDisplay(newNum) {
@@ -45,6 +43,4 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

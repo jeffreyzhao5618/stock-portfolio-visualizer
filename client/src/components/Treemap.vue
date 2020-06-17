@@ -5,7 +5,7 @@
         <div
           class="portfolio-wrapper d-block"
           ref="portfolioMap"
-          :style="{height: mapHeight + 'px'}"
+          :style="{ height: mapHeight + 'px' }"
         >
           <fund-block
             v-for="(fundBlock, i) in treemap"
@@ -21,10 +21,12 @@
         <div class="mx-auto" style="width: 80%;">
           <div
             class="legend-card"
-            v-for="(entry,i) in getLegend"
+            v-for="(entry, i) in getLegend"
             :key="i"
-            :style="{backgroundColor: '#' + entry.color}"
-          >{{entry.number}}</div>
+            :style="{ backgroundColor: '#' + entry.color }"
+          >
+            {{ entry.number }}
+          </div>
         </div>
       </v-col>
     </v-row>
@@ -72,7 +74,7 @@ export default {
           "E70303",
           "EF0202",
           "F70101",
-          "FF0000"
+          "FF0000",
         ],
         greenColors: [
           "1E1E1E",
@@ -104,25 +106,25 @@ export default {
           "03E703",
           "02EF02",
           "01F701",
-          "00FF00"
-        ]
+          "00FF00",
+        ],
       },
       mapWidth: 0,
       mapHeight: 0,
 
       testObj: JSON.parse(
         '[{"name":"Bitcoin","value":2013.687328,"children":[{"name":"USD","value":1550,"quantity":1550,"purchasePrice":1550,"fund":"Bitcoin","percentChange":0},{"name":"BTC-USD","value":463.687328,"quantity":0.0479,"purchasePrice":450,"fund":"Bitcoin","marketPrice":9680.32,"percentChange":-0.17047054}]},{"name":"Energy","value":0,"children":[{"name":"USO","value":0,"quantity":0,"purchasePrice":-1117,"fund":"Energy","marketPrice":25.88,"percentChange":3.3959186}]},{"name":"Gold","value":2745.6,"children":[{"name":"GDX","value":2745.6,"quantity":80,"purchasePrice":2820.9,"fund":"Gold","marketPrice":34.32,"percentChange":0.9411756}]},{"name":"Finance","value":4424.82,"children":[{"name":"CINF","value":1179,"quantity":20,"purchasePrice":1084.85,"fund":"Finance","marketPrice":58.95,"percentChange":-2.6745896},{"name":"BRKB","value":742.32,"quantity":4,"purchasePrice":696.44,"fund":"Finance","marketPrice":185.58,"percentChange":0.25931698},{"name":"USD","value":2503.5,"quantity":2503.5,"purchasePrice":2503.5,"fund":"Finance","percentChange":0}]}]'
-      )
+      ),
     };
   },
   components: {
-    fundBlock: FundBlock
+    fundBlock: FundBlock,
   },
   watch: {
     mapWidth: function() {
       let container = { x0: 0, y0: 0, x1: this.mapWidth, y1: this.mapHeight };
       console.log(globalBus.portfolio);
-      squarifyObjectPromise(globalBus.portfolio).then(data => {
+      squarifyObjectPromise(globalBus.portfolio).then((data) => {
         let squarifyObject = squarify(data, container);
         let fund = [];
         let currFund = squarifyObject[0].fund;
@@ -162,7 +164,7 @@ export default {
       //         currFund = squarifyObject[x].fund;
       //     }
       // }
-    }
+    },
   },
   computed: {
     getLegend() {
@@ -179,14 +181,14 @@ export default {
         { color: this.colorsList.greenColors[14], number: "1.5%" },
         { color: this.colorsList.greenColors[19], number: "2%" },
         { color: this.colorsList.greenColors[24], number: "2.5%" },
-        { color: this.colorsList.greenColors[29], number: "3%" }
+        { color: this.colorsList.greenColors[29], number: "3%" },
       ];
-    }
+    },
   },
   mounted() {
     this.mapWidth = this.$refs.portfolioMap.offsetWidth;
     this.mapHeight = this.mapWidth * 0.8;
-  }
+  },
 };
 </script>
 

@@ -1,23 +1,19 @@
 <template>
-<v-app :style="{background:$vuetify.theme.themes.dark.background}">
-  <app-header></app-header>
-  <v-content>
-  <router-view>
-  </router-view>
-  </v-content>
-
-</v-app>
+  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
+    <app-header></app-header>
+    <v-content>
+      <router-view> </router-view>
+    </v-content>
+  </v-app>
 </template>
 <script>
-import Header from './components/Header'
+import Header from "./components/Header";
 
 export default {
   components: {
-    appHeader: Header
-  }
-  
-}
+    appHeader: Header,
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

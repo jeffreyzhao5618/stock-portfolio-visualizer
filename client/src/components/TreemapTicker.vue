@@ -1,19 +1,32 @@
 <template>
-  <v-card 
-    class="ticker-block" 
-    :class="{highlight: highlight}" 
-    :style="tickerBlockContainer" 
+  <v-card
+    class="ticker-block"
+    :class="{ highlight: highlight }"
+    :style="tickerBlockContainer"
     style="position: absolute;"
-    tile 
-    flat 
+    tile
+    flat
     :color="getColor"
-    :href="tickerBlockData.name != 'USD' ? 'https://finance.yahoo.com/quote/'+tickerBlockData.name+'?p='+tickerBlockData.name+'&.tsrc=fin-srch' : ''">
-    <v-row align="center" justify="center" :style="{height: tickerBlockContainer.height}">
+    :href="
+      tickerBlockData.name != 'USD'
+        ? 'https://finance.yahoo.com/quote/' +
+          tickerBlockData.name +
+          '?p=' +
+          tickerBlockData.name +
+          '&.tsrc=fin-srch'
+        : ''
+    "
+  >
+    <v-row
+      align="center"
+      justify="center"
+      :style="{ height: tickerBlockContainer.height }"
+    >
       <div>
         <v-card-title style="text-align:center;" class="d-block">
-          {{tickerBlockData.name}}
-          <br/>
-          {{getPercentChange}}
+          {{ tickerBlockData.name }}
+          <br />
+          {{ getPercentChange }}
         </v-card-title>
         <!-- <v-btn 
             v-if="tickerBlockData.name != 'USD'" 
@@ -35,20 +48,20 @@ export default {
   props: {
     tickerBlockData: Object,
     colorsList: Object,
-    highlight: Boolean
-  }, 
-//   methods: {
-//       gotToQuote() {
-//           window.location.href = 'https://finance.yahoo.com/quote/'+this.tickerBlockData.name+'?p='+this.tickerBlockData.name+'&.tsrc=fin-srch';
-//       }
-//   },
+    highlight: Boolean,
+  },
+  //   methods: {
+  //       gotToQuote() {
+  //           window.location.href = 'https://finance.yahoo.com/quote/'+this.tickerBlockData.name+'?p='+this.tickerBlockData.name+'&.tsrc=fin-srch';
+  //       }
+  //   },
   computed: {
     tickerBlockContainer() {
       return {
         top: this.tickerBlockData.y0 + "px",
         left: this.tickerBlockData.x0 + "px",
         width: this.tickerBlockData.x1 - this.tickerBlockData.x0 + "px",
-        height: this.tickerBlockData.y1 - this.tickerBlockData.y0 + "px"
+        height: this.tickerBlockData.y1 - this.tickerBlockData.y0 + "px",
       };
     },
     getColor() {
@@ -83,8 +96,8 @@ export default {
         return this.tickerBlockData.percentChange + "%";
       }
       return "";
-    }
-  }
+    },
+  },
 };
 </script>
 

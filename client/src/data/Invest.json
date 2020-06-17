@@ -1,1 +1,302 @@
-[{"date":"5/1/2020","ticker":"USD","priceShare":"1","totalPrice":"2000.00 ","totalQuantity":"2000.0000 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/9/2020","ticker":"USO","priceShare":"21.2","totalPrice":"5300.00 ","totalQuantity":"250.0000 ","account":"IB","fund":"Energy","summary":""},{"date":"5/11/2020","ticker":"BTC-USD","priceShare":"8480.49","totalPrice":"50.00 ","totalQuantity":"0.0059 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/11/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/12/2020","ticker":"BTC-USD","priceShare":"8937.2","totalPrice":"50.00 ","totalQuantity":"0.0056 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/12/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/13/2020","ticker":"BTC-USD","priceShare":"9180.31","totalPrice":"50.00 ","totalQuantity":"0.0054 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/13/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/13/2020","ticker":"BTC-USD","priceShare":"9273.39","totalPrice":"-150.00","totalQuantity":"-0.0162","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/13/2020","ticker":"USD","priceShare":"1","totalPrice":"150.00 ","totalQuantity":"150.0000 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/14/2020","ticker":"BTC-USD","priceShare":"9623.33","totalPrice":"200.00 ","totalQuantity":"0.0208 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/14/2020","ticker":"USD","priceShare":"1","totalPrice":"-200.00","totalQuantity":"-200.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/14/2020","ticker":"GDX","priceShare":"35.27","totalPrice":"5290.50 ","totalQuantity":"150.0000 ","account":"IRA-Fidelity","fund":"Gold","summary":""},{"date":"5/15/2020","ticker":"BTC-USD","priceShare":"9546.38","totalPrice":"50.00 ","totalQuantity":"0.0052 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/15/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/16/2020","ticker":"BTC-USD","priceShare":"9444.51","totalPrice":"50.00 ","totalQuantity":"0.0053 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/16/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/17/2020","ticker":"BTC-USD","priceShare":"9797.1","totalPrice":"50.00 ","totalQuantity":"0.0051 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/17/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/18/2020","ticker":"BTC-USD","priceShare":"9764.44","totalPrice":"50.00 ","totalQuantity":"0.0051 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/18/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/19/2020","ticker":"CINF","priceShare":"51.995","totalPrice":"519.95 ","totalQuantity":"10.0000 ","account":"IRA-Fidelity","fund":"Finance","summary":""},{"date":"5/19/2020","ticker":"BRKB","priceShare":"174.11","totalPrice":"696.44 ","totalQuantity":"4.0000 ","account":"IRA-Fidelity","fund":"Finance","summary":""},{"date":"5/21/2020","ticker":"GDX","priceShare":"35.28","totalPrice":"-2469.60","totalQuantity":"-70.0000","account":"IRA-Fidelity","fund":"Gold","summary":""},{"date":"5/21/2020","ticker":"CINF","priceShare":"56.49","totalPrice":"564.90 ","totalQuantity":"10.0000 ","account":"IRA-Fidelity","fund":"Finance","summary":""},{"date":"5/21/2020","ticker":"USO","priceShare":"26.09","totalPrice":"-3913.50","totalQuantity":"-150.0000","account":"IB","fund":"Energy","summary":""},{"date":"5/26/2020","ticker":"BTC-USD","priceShare":"8791.31","totalPrice":"50.00 ","totalQuantity":"0.0057 ","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/26/2020","ticker":"USD","priceShare":"1","totalPrice":"-50.00","totalQuantity":"-50.0000","account":"ETORO","fund":"Bitcoin","summary":""},{"date":"5/27/2020","ticker":"USO","priceShare":"25.035","totalPrice":"-2503.50","totalQuantity":"-100.0000","account":"IB","fund":"Energy","summary":""},{"date":"5/27/2020","ticker":"USD","priceShare":"1","totalPrice":"2503.50 ","totalQuantity":"2503.5000 ","account":"IB","fund":"Finance","summary":""}]
+[
+  {
+    "date": "5/1/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "2000.00 ",
+    "totalQuantity": "2000.0000 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/9/2020",
+    "ticker": "USO",
+    "priceShare": "21.2",
+    "totalPrice": "5300.00 ",
+    "totalQuantity": "250.0000 ",
+    "account": "IB",
+    "fund": "Energy",
+    "summary": ""
+  },
+  {
+    "date": "5/11/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "8480.49",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0059 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/11/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/12/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "8937.2",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0056 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/12/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/13/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9180.31",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0054 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/13/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/13/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9273.39",
+    "totalPrice": "-150.00",
+    "totalQuantity": "-0.0162",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/13/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "150.00 ",
+    "totalQuantity": "150.0000 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/14/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9623.33",
+    "totalPrice": "200.00 ",
+    "totalQuantity": "0.0208 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/14/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-200.00",
+    "totalQuantity": "-200.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/14/2020",
+    "ticker": "GDX",
+    "priceShare": "35.27",
+    "totalPrice": "5290.50 ",
+    "totalQuantity": "150.0000 ",
+    "account": "IRA-Fidelity",
+    "fund": "Gold",
+    "summary": ""
+  },
+  {
+    "date": "5/15/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9546.38",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0052 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/15/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/16/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9444.51",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0053 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/16/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/17/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9797.1",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0051 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/17/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/18/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "9764.44",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0051 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/18/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/19/2020",
+    "ticker": "CINF",
+    "priceShare": "51.995",
+    "totalPrice": "519.95 ",
+    "totalQuantity": "10.0000 ",
+    "account": "IRA-Fidelity",
+    "fund": "Finance",
+    "summary": ""
+  },
+  {
+    "date": "5/19/2020",
+    "ticker": "BRKB",
+    "priceShare": "174.11",
+    "totalPrice": "696.44 ",
+    "totalQuantity": "4.0000 ",
+    "account": "IRA-Fidelity",
+    "fund": "Finance",
+    "summary": ""
+  },
+  {
+    "date": "5/21/2020",
+    "ticker": "GDX",
+    "priceShare": "35.28",
+    "totalPrice": "-2469.60",
+    "totalQuantity": "-70.0000",
+    "account": "IRA-Fidelity",
+    "fund": "Gold",
+    "summary": ""
+  },
+  {
+    "date": "5/21/2020",
+    "ticker": "CINF",
+    "priceShare": "56.49",
+    "totalPrice": "564.90 ",
+    "totalQuantity": "10.0000 ",
+    "account": "IRA-Fidelity",
+    "fund": "Finance",
+    "summary": ""
+  },
+  {
+    "date": "5/21/2020",
+    "ticker": "USO",
+    "priceShare": "26.09",
+    "totalPrice": "-3913.50",
+    "totalQuantity": "-150.0000",
+    "account": "IB",
+    "fund": "Energy",
+    "summary": ""
+  },
+  {
+    "date": "5/26/2020",
+    "ticker": "BTC-USD",
+    "priceShare": "8791.31",
+    "totalPrice": "50.00 ",
+    "totalQuantity": "0.0057 ",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/26/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "-50.00",
+    "totalQuantity": "-50.0000",
+    "account": "ETORO",
+    "fund": "Bitcoin",
+    "summary": ""
+  },
+  {
+    "date": "5/27/2020",
+    "ticker": "USO",
+    "priceShare": "25.035",
+    "totalPrice": "-2503.50",
+    "totalQuantity": "-100.0000",
+    "account": "IB",
+    "fund": "Energy",
+    "summary": ""
+  },
+  {
+    "date": "5/27/2020",
+    "ticker": "USD",
+    "priceShare": "1",
+    "totalPrice": "2503.50 ",
+    "totalQuantity": "2503.5000 ",
+    "account": "IB",
+    "fund": "Finance",
+    "summary": ""
+  }
+]
