@@ -24,7 +24,7 @@ app.post('/login', async (req, res) => {
     //     return req.body.email === user.email && req.body.password === user.password;
     // });
     userModel.find({email: req.body.email, password: req.body.password}, function(err, user) {
-        if (err) { res.json({error: ''}) }
+        if (err) { res.json({error: 'Unexpected error'}) }
         try {
             // if(user[0].password == req.body.password) {
             //     res.json({success: 'true', portfolio: user[0].portfolio});
@@ -36,7 +36,7 @@ app.post('/login', async (req, res) => {
         }
         // No user with matching email and password
         catch(err) {
-            res.json({success: ''});
+            res.json({error: 'Email or password is incorrect.'});
         }
     });
     
@@ -49,7 +49,7 @@ app.post('/register', (req, res) => {
             res.json({error: 'user already exists'});
             return;
         };
-        res.json({success: ''});
+        res.json({success: 'true'});
     });
     
     // if(users.filter(user => req.body.email == user.email) == 0) {

@@ -8,12 +8,13 @@
         :rules="passwordRules"
         label="Password"
         type="password"
+        @input="clearErrors"
       >
       </v-text-field>
       <p v-if="loginFailed" class="small red--text">
         Email or password is incorrect
       </p>
-      <v-btn class="mb-5 mt-3" color="secondary" @click="logIn">
+      <v-btn class="mb-5 mt-3" color="secondary" @click="logIn" >
         Log In
       </v-btn>
     </v-form>
@@ -57,8 +58,6 @@ export default {
             globalBus.portfolio = res.data.portfolio;
             this.$router.push({ name: "Home" });
           } else {
-            this.email = "";
-            this.password = "";
             this.$refs.form.reset();
             this.loginFailed = true;
           }
