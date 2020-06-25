@@ -35,6 +35,7 @@
       <v-tabs align-with-title color="green lighten-5">
         <v-tab :to="{ name: 'Home' }">Home</v-tab>
         <v-tab :to="{ name: 'Portfolio' }">Portfolio</v-tab>
+        <v-tab :to="{ name: 'Treemap' }">Treemap</v-tab>
       </v-tabs>
     </template>
   </v-app-bar>

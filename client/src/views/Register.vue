@@ -60,7 +60,7 @@ export default {
         if(this.password == this.secondPassword) {
           axios({
             method: "post",
-            url: process.env.VUE_APP_URL + "register",
+            url: process.env.VUE_APP_URL_USER + "register",
             data: {
               email: this.email,
               password: this.password,

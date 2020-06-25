@@ -99,28 +99,41 @@ function getDataByFunds(data) {
         tickers.push(data[i].ticker);
       }
     }
-
-    getQuotes(tickers).then((quotes) => {
+    
+    if (tickers.length > 0) {
+      getQuotes(tickers).then((quotes) => {
+        for (let i in squarifyObject) {
+          for (let j in squarifyObject[i].children) {
+            let currTicker = squarifyObject[i].children[j];
+            if (currTicker.name == "USD") {
+              squarifyObject[i].value += currTicker.purchasePrice;
+              currTicker.percentChange = 0;
+            } else {
+              let quoteIndex = tickers.indexOf(currTicker.name);
+              currTicker.value =
+                quotes[quoteIndex].regularMarketPrice * currTicker.quantity;
+              currTicker.marketPrice = quotes[quoteIndex].regularMarketPrice;
+              squarifyObject[i].value +=
+                quotes[quoteIndex].regularMarketPrice * currTicker.quantity;
+              currTicker.percentChange =
+                quotes[quoteIndex].regularMarketChangePercent;
+            }
+          }
+        }
+        console.log('test');
+      console.log(squarifyObject);
+        resolve(squarifyObject);
+      });
+    } else {
       for (let i in squarifyObject) {
         for (let j in squarifyObject[i].children) {
           let currTicker = squarifyObject[i].children[j];
-          if (currTicker.name == "USD") {
-            squarifyObject[i].value += currTicker.purchasePrice;
-            currTicker.percentChange = 0;
-          } else {
-            let quoteIndex = tickers.indexOf(currTicker.name);
-            currTicker.value =
-              quotes[quoteIndex].regularMarketPrice * currTicker.quantity;
-            currTicker.marketPrice = quotes[quoteIndex].regularMarketPrice;
-            squarifyObject[i].value +=
-              quotes[quoteIndex].regularMarketPrice * currTicker.quantity;
-            currTicker.percentChange =
-              quotes[quoteIndex].regularMarketChangePercent;
-          }
+          squarifyObject[i].value += currTicker.purchasePrice;
+          currTicker.percentChange = 0;
         }
       }
       resolve(squarifyObject);
-    });
+    }
   });
 }
 

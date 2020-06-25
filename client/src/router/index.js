@@ -15,10 +15,15 @@ Vue.use(VueRouter)
   {
     path: '/portfolio',
     name: 'Portfolio',
+    component: () => import('../views/Portfolio')
+  },
+  {
+    path: '/treemap',
+    name: 'Treemap',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( '../views/Portfolio'),
+    component: () => import( '../views/Treemap'),
   },
   {
     path: '/login',

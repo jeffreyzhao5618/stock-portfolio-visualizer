@@ -133,8 +133,15 @@ export default {
             continue;
           }
           if (x == squarifyObject.length - 1) {
-            fund.push(squarifyObject[x]);
-            this.treemap.push(fund);
+            if(squarifyObject[x].fund == currFund) {
+              fund.push(squarifyObject[x]);
+              this.treemap.push(fund);
+            } else {
+              this.treemap.push(fund);
+              fund = [];
+              fund.push(squarifyObject[x]);
+              this.treemap.push(fund);
+            }
           } else if (squarifyObject[x].fund == currFund) {
             fund.push(squarifyObject[x]);
           } else {

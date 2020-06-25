@@ -8,6 +8,7 @@ export const globalBus = new Vue({
   data: {
     loggedIn: false,
     portfolio: [],
+    userID: ''
   },
 });
 

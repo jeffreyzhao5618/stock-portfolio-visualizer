@@ -46,7 +46,7 @@ export default {
       if (this.$refs.form.validate()) {
         axios({
           method: "post",
-          url: process.env.VUE_APP_URL + "login",
+          url: process.env.VUE_APP_URL_USER + "login",
           data: {
             email: this.email,
             password: this.password,
@@ -56,6 +56,7 @@ export default {
           if (res.data.success) {
             globalBus.loggedIn = true;
             globalBus.portfolio = res.data.portfolio;
+            globalBus.userID = res.data.user;
             this.$router.push({ name: "Home" });
           } else {
             this.$refs.form.reset();
